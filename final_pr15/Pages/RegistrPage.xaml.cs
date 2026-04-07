@@ -32,7 +32,7 @@ namespace final_pr15.Pages
 
             if (AuthService.LoginAsAdmin(pin))
             {
-                NavigationService?.Navigate(new ProductsPage());
+                NavigationService.Navigate(new ProductsPage());
             }
             else
             {
@@ -44,7 +44,7 @@ namespace final_pr15.Pages
         private void GuestLogin_Click(object sender, RoutedEventArgs e)
         {
             AuthService.LoginAsGuest();
-            NavigationService?.Navigate(new ProductsPage());
+            NavigationService.Navigate(new ProductsPage());
         }
     }
 }
